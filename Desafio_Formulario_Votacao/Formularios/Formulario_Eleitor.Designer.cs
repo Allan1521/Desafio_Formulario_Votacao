@@ -35,7 +35,7 @@
             lbl_D_Nasc = new Label();
             lbl_Cpf_Eleitor = new Label();
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
+            txtNomeEleitor = new TextBox();
             dateTimePicker1 = new DateTimePicker();
             mTBox_Cpf = new MaskedTextBox();
             mTBox_Num_Titulo = new MaskedTextBox();
@@ -58,9 +58,9 @@
             lbl_Cadastro_Eleitores.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_Cadastro_Eleitores.Location = new Point(116, 18);
             lbl_Cadastro_Eleitores.Name = "lbl_Cadastro_Eleitores";
-            lbl_Cadastro_Eleitores.Size = new Size(224, 30);
+            lbl_Cadastro_Eleitores.Size = new Size(218, 30);
             lbl_Cadastro_Eleitores.TabIndex = 0;
-            lbl_Cadastro_Eleitores.Text = "Cadastro  de Eleitores";
+            lbl_Cadastro_Eleitores.Text = "Cadastro de Eleitores";
             // 
             // lbl_Nome_Eleitor
             // 
@@ -112,12 +112,12 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtNomeEleitor
             // 
-            textBox1.Location = new Point(12, 297);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(431, 23);
-            textBox1.TabIndex = 6;
+            txtNomeEleitor.Location = new Point(12, 297);
+            txtNomeEleitor.Name = "txtNomeEleitor";
+            txtNomeEleitor.Size = new Size(431, 23);
+            txtNomeEleitor.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
@@ -247,7 +247,7 @@
             Controls.Add(mTBox_Num_Titulo);
             Controls.Add(mTBox_Cpf);
             Controls.Add(dateTimePicker1);
-            Controls.Add(textBox1);
+            Controls.Add(txtNomeEleitor);
             Controls.Add(pictureBox1);
             Controls.Add(lbl_Cpf_Eleitor);
             Controls.Add(lbl_D_Nasc);
@@ -256,6 +256,7 @@
             Controls.Add(lbl_Cadastro_Eleitores);
             Name = "Form_De_Eleitores";
             Text = "Formulário de Eleitores";
+            Load += Form_De_Eleitores_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -269,7 +270,7 @@
         private Label lbl_D_Nasc;
         private Label lbl_Cpf_Eleitor;
         private PictureBox pictureBox1;
-        private TextBox textBox1;
+        private TextBox txtNomeEleitor;
         private DateTimePicker dateTimePicker1;
         private MaskedTextBox mTBox_Cpf;
         private MaskedTextBox mTBox_Num_Titulo;

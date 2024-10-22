@@ -39,6 +39,11 @@
             lblPartido = new Label();
             textBox2 = new TextBox();
             lbl_Aperte = new Label();
+            lbl_TeclaVerde = new Label();
+            lbl_TeclaLaranja = new Label();
+            btn_verde = new Button();
+            btn_Laranja = new Button();
+            btn_branco = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -134,17 +139,76 @@
             // 
             lbl_Aperte.AutoSize = true;
             lbl_Aperte.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_Aperte.Location = new Point(22, 350);
+            lbl_Aperte.Location = new Point(167, 340);
             lbl_Aperte.Name = "lbl_Aperte";
             lbl_Aperte.Size = new Size(128, 25);
             lbl_Aperte.TabIndex = 11;
             lbl_Aperte.Text = "Aperte a tecla";
             // 
+            // lbl_TeclaVerde
+            // 
+            lbl_TeclaVerde.AutoSize = true;
+            lbl_TeclaVerde.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_TeclaVerde.Location = new Point(167, 386);
+            lbl_TeclaVerde.Name = "lbl_TeclaVerde";
+            lbl_TeclaVerde.Size = new Size(283, 32);
+            lbl_TeclaVerde.TabIndex = 12;
+            lbl_TeclaVerde.Text = "VERDE para CONFIRMA";
+            // 
+            // lbl_TeclaLaranja
+            // 
+            lbl_TeclaLaranja.AutoSize = true;
+            lbl_TeclaLaranja.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_TeclaLaranja.Location = new Point(155, 429);
+            lbl_TeclaLaranja.Name = "lbl_TeclaLaranja";
+            lbl_TeclaLaranja.Size = new Size(302, 32);
+            lbl_TeclaLaranja.TabIndex = 13;
+            lbl_TeclaLaranja.Text = "LARANJA para CORRIGIR";
+            // 
+            // btn_verde
+            // 
+            btn_verde.BackColor = Color.Chartreuse;
+            btn_verde.FlatStyle = FlatStyle.Popup;
+            btn_verde.ForeColor = SystemColors.MenuText;
+            btn_verde.Location = new Point(32, 386);
+            btn_verde.Name = "btn_verde";
+            btn_verde.Size = new Size(87, 32);
+            btn_verde.TabIndex = 14;
+            btn_verde.Text = "CONFIRMA";
+            btn_verde.UseVisualStyleBackColor = false;
+            // 
+            // btn_Laranja
+            // 
+            btn_Laranja.BackColor = Color.DarkOrange;
+            btn_Laranja.FlatStyle = FlatStyle.Popup;
+            btn_Laranja.Location = new Point(32, 424);
+            btn_Laranja.Name = "btn_Laranja";
+            btn_Laranja.Size = new Size(87, 37);
+            btn_Laranja.TabIndex = 15;
+            btn_Laranja.Text = "CORRIGIR";
+            btn_Laranja.UseVisualStyleBackColor = false;
+            // 
+            // btn_branco
+            // 
+            btn_branco.BackColor = SystemColors.Window;
+            btn_branco.FlatStyle = FlatStyle.Popup;
+            btn_branco.Location = new Point(32, 473);
+            btn_branco.Name = "btn_branco";
+            btn_branco.Size = new Size(87, 30);
+            btn_branco.TabIndex = 16;
+            btn_branco.Text = "BRANCO";
+            btn_branco.UseVisualStyleBackColor = false;
+            // 
             // Formulario_Votacao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(513, 450);
+            ClientSize = new Size(495, 508);
+            Controls.Add(btn_branco);
+            Controls.Add(btn_Laranja);
+            Controls.Add(btn_verde);
+            Controls.Add(lbl_TeclaLaranja);
+            Controls.Add(lbl_TeclaVerde);
             Controls.Add(lbl_Aperte);
             Controls.Add(textBox2);
             Controls.Add(lblPartido);
@@ -176,5 +240,10 @@
         private Label lblPartido;
         private TextBox textBox2;
         private Label lbl_Aperte;
+        private Label lbl_TeclaVerde;
+        private Label lbl_TeclaLaranja;
+        private Button btn_verde;
+        private Button btn_Laranja;
+        private Button btn_branco;
     }
 }

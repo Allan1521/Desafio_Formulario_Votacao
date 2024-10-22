@@ -6,5 +6,10 @@ namespace Desafio_Formulario_Votacao
         {
             InitializeComponent();
         }
+
+        private void Form_De_Eleitores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
