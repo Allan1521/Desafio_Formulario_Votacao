@@ -11,5 +11,10 @@ namespace Desafio_Formulario_Votacao
         {
 
         }
+
+        private void txtNomeEleitor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

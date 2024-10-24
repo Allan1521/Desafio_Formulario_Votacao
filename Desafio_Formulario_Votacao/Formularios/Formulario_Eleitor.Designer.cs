@@ -118,6 +118,7 @@
             txtNomeEleitor.Name = "txtNomeEleitor";
             txtNomeEleitor.Size = new Size(431, 23);
             txtNomeEleitor.TabIndex = 6;
+            txtNomeEleitor.TextChanged += txtNomeEleitor_TextChanged;
             // 
             // dateTimePicker1
             // 
